@@ -9,14 +9,12 @@ private:
     double balance;
 
 public:
-    // Constructor (random account number generate)
     Account(double b) {
         balance = b;
 
-        // random seed
+        
         srand(time(0));
 
-        // random account number
         accountNumber = "ACC" + to_string(rand() % 9000 + 1000);
     }
 
